@@ -2,12 +2,6 @@
 
 /* TODO Add site wide styles */
 
-@media (max-width: 480px) {
-    main {
-        font-size: 1.5rem;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
