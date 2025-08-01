@@ -1,0 +1,54 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+.summary > h2 {
+    color: rgb(10, 52, 100);
+    margin-bottom: 2.5rem;
+}
+
+.summary-p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.summary-fee {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: rgb(34, 78, 129);
+}
+
+.summary-result {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+thead {
+    background-color: rgb(191, 190, 190);
+    border-radius: 1rem;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+
+
