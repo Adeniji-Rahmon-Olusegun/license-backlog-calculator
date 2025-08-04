@@ -8,8 +8,13 @@ const { Result } = require('express-validator');
 const app = express();
 
 app.use(cors({
-    origin: 'https://license-backlog-calculator-17ry.vercel.app'
+    origin: [
+        'http://localhost:3000/',
+        'https://license-backlog-calculator-17ry.vercel.app'
+    ]
 }))
+
+// app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 

@@ -5,7 +5,16 @@ function calculateFeeB(currentYear, expiryDate, totalCapacity, takeOverFee) {
     let resNew = 0;
     let totalRes = 0;
     let licenseStatus = "New Regime";
-    let takeOverFeeVal = (takeOverFee * 0.05) || 0;
+    let takeOverFeeVal = takeOverFee * 0.05 || 0;
+    
+    // if (!takeOverFee) {
+    //     takeOverFeeVal = 0
+    // } else if (takeOverFee * 0.05 <= 500000) {
+    //     takeOverFeeVal = 500000;
+    // } else if (takeOverFee * 0.05 > 500000) {
+    //     takeOverFeeVal = takeOverFee * 0.05
+    // }
+  
 
     let { lowerLimit, upperLimit, licenseFee } = heuristicsB(totalCapacity);
 

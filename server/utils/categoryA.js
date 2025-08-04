@@ -6,6 +6,7 @@ function calculateFeeA(currentYear, expiryDate, totalCapacity, takeOverFee) {
     let totalRes = 0;
     let licenseStatus = "New Regime";
     let takeOverFeeVal = (takeOverFee * 0.05) || 0;
+  
 
     let { lowerLimit, upperLimit, licenseFee } = heuristicsA(totalCapacity);
 
