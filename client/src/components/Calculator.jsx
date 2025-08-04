@@ -24,6 +24,7 @@ export default function Calculator() {
         setLoading(true);
 
         try {
+            // 'https://license-backlog-calculator.onrender.com/api/calculateLicenseFee'
             const response = await axios.post('https://license-backlog-calculator.onrender.com/api/calculateLicenseFee', userData);
             setResult({ ...result, ...response.data });
             console.log(result);
@@ -58,7 +59,7 @@ export default function Calculator() {
                     <input type="number" id="totalCapacity" name="totalCapacity" placeholder='e.g. 120000' required={true}/>
 
                     <label htmlFor="takeOverFee">Take-Over Fee (if Applicable):</label>
-                    <input type="number" id="ttakeOverFee" name="takeOverFee" defaultValue={0} placeholder='e.g. 50,000,000'/>
+                    <input type="number" id="takeOverFee" name="takeOverFee" min='500000' placeholder='e.g. 50,000,000'/>
 
                     <button type="submit">Calculate</button>
                 </form>

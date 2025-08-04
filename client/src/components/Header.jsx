@@ -14,16 +14,23 @@ export default function Header() {
                     <li><a href="https://roms.nmdpra.gov.ng" target='blank'>Home</a></li>
                     <li><a href="https://www.nmdpra.gov.ng/AboutUs" target='blank'>About</a></li>
                     <li className="dropdown">
-                        <a href="https://www.nmdpra.gov.ng/LicenseVerification" target='blank'>Staff Tool Kit ▾</a>
+                        <a href="" target='blank'>Staff Tool Kit ▾</a>
                         <ul className="dropdown-menu">
-                            <li><a href="">Gazetted Regulations</a></li>
+                            <li><a href="">File Management</a></li>
                             <hr />
-                            <li><a href="">Midstream Guideline</a></li>
+                            <li><a href="">Memo Generator</a></li>
                             <hr />
-                            <li><a href="">Downstream Guideline</a></li>
+                            <li><a href="">Journey Management</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://www.nmdpra.gov.ng/DownstreamGuidelines" target='blank'>Resources</a></li>
+                    <li className="dropdown">
+                        <a href="https://www.nmdpra.gov.ng/DownstreamGuidelines" target='blank'>Resources ▾</a>
+                        <ul className="dropdown-menu">
+                            <li><a href="https://www.nmdpra.gov.ng/MidstreamGuidelines">Midstream Guidelines</a></li>
+                            <hr />
+                            <li><a href="https://www.nmdpra.gov.ng/DownstreamGuidelines">Downstream Guidelines</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
