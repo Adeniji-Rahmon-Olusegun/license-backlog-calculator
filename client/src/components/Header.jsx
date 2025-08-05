@@ -4,12 +4,16 @@ import nmdpraLogo from '../images/nmdpra-logo.png';
 export default function Header() {
     return (
         <header className="header">
-            <div className="header-logo">
-                <img  className="header--logo-image" src={nmdpraLogo} alt="NMDPRA LOGO"/>
-                <h2>NMDPRA AKURE</h2>
-            </div>
+           
             
-            <nav >
+            {/* <button className='header-toggle'>☰</button> */}
+            <nav className='navbar'>
+                <div className="header-logo">
+                    <div>
+                        <img  className="header--logo-image" src={nmdpraLogo} alt="NMDPRA LOGO"/>
+                    </div>
+                    <h2>NMDPRA AKURE</h2>
+                </div>
                 <ul className='header--nav-items'>
                     <li><a href="https://roms.nmdpra.gov.ng" target='blank'>Home</a></li>
                     <li><a href="https://www.nmdpra.gov.ng/AboutUs" target='blank'>About</a></li>

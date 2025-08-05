@@ -12,6 +12,8 @@
 .summary > h2 {
     color: rgb(10, 52, 100);
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .summary-p {
