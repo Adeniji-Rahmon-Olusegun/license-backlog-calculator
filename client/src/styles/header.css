@@ -1,3 +1,7 @@
+.header {
+    width: 100%;
+}
+
 .navbar {
     background-color: rgb(63, 114, 169);
     display: flex;
