@@ -1,8 +1,9 @@
 .calculator {
     padding: 1.5rem;
     border-radius: 0.5rem;
-    width: 50%;
+    flex: 1;
     height: 100%;
+    min-width: 0;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
 }
 
