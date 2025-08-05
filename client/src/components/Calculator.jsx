@@ -61,7 +61,7 @@ export default function Calculator() {
                     <label htmlFor="takeOverFee">Take-Over Fee (if Applicable):</label>
                     <input type="number" id="takeOverFee" name="takeOverFee" defaultValue={0} placeholder='e.g. 50,000,000'/>
 
-                    <button type="submit">Calculate</button>
+                    <button type="submit" className='calculator-button'>Calculate</button>
                 </form>
                 
             </section>

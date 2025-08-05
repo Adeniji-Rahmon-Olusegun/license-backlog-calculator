@@ -41,7 +41,7 @@ select:hover {
     border: 4px solid #6384b5;
 }
 
-button {
+.calculator-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ button {
     border-radius: 0.5rem;
 }
 
-button:hover {
+.calculator-button:hover {
     background-color: rgb(10, 52, 100);
     cursor: pointer;
 }

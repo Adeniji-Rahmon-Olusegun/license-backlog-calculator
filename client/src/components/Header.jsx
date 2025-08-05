@@ -1,12 +1,17 @@
 import '../styles/header.css';
 import nmdpraLogo from '../images/nmdpra-logo.png';
+import Reactimport, { useState } from 'react';
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function handleToggle() {
+        setMenuOpen(!menuOpen);
+    }
+
     return (
         <header className="header">
            
-            
-            {/* <button className='header-toggle'>☰</button> */}
             <nav className='navbar'>
                 <div className="header-logo">
                     <div>
@@ -14,7 +19,11 @@ export default function Header() {
                     </div>
                     <h2>NMDPRA AKURE</h2>
                 </div>
-                <ul className='header--nav-items'>
+
+                <button className='hamburger' onClick={handleToggle}>☰</button>
+
+                <ul className={`nav-links ${ menuOpen ? 'active' : '' }`}>
+                    
                     <li><a href="https://roms.nmdpra.gov.ng" target='blank'>Home</a></li>
                     <li><a href="https://www.nmdpra.gov.ng/AboutUs" target='blank'>About</a></li>
                     <li className="dropdown">
