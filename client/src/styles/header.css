@@ -8,9 +8,10 @@
     box-sizing: border-box;
     color: #cbd5da;
     align-items: center;
-    gap: 20rem;
+    gap: 12rem;
     max-width: 100%;
     padding-left: 1rem;
+    position: relative;
 }
 
 .header-logo {
@@ -60,6 +61,10 @@
     .hamburger{
         display: block;
     }
+
+    /* .navbar {
+        gap: 15rem;
+    } */
 
     .nav-links {
         display: none;
