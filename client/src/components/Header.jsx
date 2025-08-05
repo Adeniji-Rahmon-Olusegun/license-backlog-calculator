@@ -26,10 +26,10 @@ export default function Header() {
                     <li className="dropdown">
                         <a href="https://www.nmdpra.gov.ng/DownstreamGuidelines" target='blank'>Resources ▾</a>
                         <ul className="dropdown-menu">
-                            <li><a href="https://www.nmdpra.gov.ng/MidstreamGuidelines">Midstream Guidelines</a></li>
+                            <li><a href="https://www.nmdpra.gov.ng/MidstreamGuidelines" target='blank'>Midstream Guidelines</a></li>
                             <hr />
-                            <li><a href="https://www.nmdpra.gov.ng/DownstreamGuidelines">Downstream Guidelines</a></li>
-                        </ul>
+                            <li><a href="https://www.nmdpra.gov.ng/DownstreamGuidelines" target='blank'>Downstream Guidelines</a></li>
+                        </ul> 
                     </li>
                 </ul>
             </nav>
