@@ -2,16 +2,18 @@
     background-color: rgb(63, 114, 169);
     display: flex;
     color: #cbd5da;
-    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
     align-items: center;
-    gap: 1rem;
+    gap: 10rem;
     height: 5rem;
-    width: 100%;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .header-logo {
     margin-left: 3rem;
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 1rem;
     font-size: medium;
@@ -20,15 +22,16 @@
 
 .header--logo-image {
     width: 4rem;
+    height: 4rem;
 }
 
 .header--nav-items {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    font-weight: 650;
-    /* width: 70%; */
+    font-weight: 500;
     gap: 3rem;
-    margin-left: 22rem;
+    /* margin-left: 16rem; */
 }
 
 a {
