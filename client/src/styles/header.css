@@ -7,7 +7,7 @@
     gap: 10rem;
     height: 5rem;
     max-width: 100%;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .header-logo {
