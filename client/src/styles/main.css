@@ -8,3 +8,10 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
