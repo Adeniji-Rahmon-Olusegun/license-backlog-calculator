@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Summary from './Summary';
+import Loading from './Loading';
 import '../styles/calculator.css';
 import axios from 'axios';
 
@@ -20,13 +21,14 @@ export default function Calculator() {
         event.preventDefault();
         const formData = new FormData(event.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-    
+
         setLoading(true);
 
         try {
             // 'https://license-backlog-calculator.onrender.com/api/calculateLicenseFee'
             const response = await axios.post('https://license-backlog-calculator.onrender.com/api/calculateLicenseFee', userData);
             setResult({ ...result, ...response.data });
+            
             console.log(result);
         } catch (error) {
             console.error("Couldn't fetch response")
@@ -37,6 +39,7 @@ export default function Calculator() {
 
     return (
         <>
+            { loading && <Loading /> }
             <section className='calculator'>
                 <h2>ROMS License Backlog Calculator</h2>
 
