@@ -58,7 +58,7 @@ export default function Calculator() {
                     <label htmlFor="expiryYear">Previous License Expiry Year:</label>
                     <input type="number" id="expiryYear" name="expiryYear" placeholder='e.g. 1996' min="1000" max="2099" required={true} />
 
-                    <label htmlFor="totalCapacity">Tank Capacity (ltrs.):</label>
+                    <label htmlFor="totalCapacity">Total Tank Capacity (ltrs.):</label>
                     <input type="number" id="totalCapacity" name="totalCapacity" placeholder='e.g. 120000' required={true}/>
 
                     <label htmlFor="takeOverFee">Take-Over Fee (if Applicable):</label>
