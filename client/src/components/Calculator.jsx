@@ -29,7 +29,7 @@ export default function Calculator() {
             const response = await axios.post('https://license-backlog-calculator.onrender.com/api/calculateLicenseFee', userData);
             setResult({ ...result, ...response.data });
             
-            console.log(result);
+            // console.log(result);
         } catch (error) {
             console.error("Couldn't fetch response")
         } finally {

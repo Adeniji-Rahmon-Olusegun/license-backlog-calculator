@@ -27,7 +27,7 @@ app.post('/api/calculateLicenseFee', (req, res) => {
     totalCapacity = parseInt(totalCapacity);
     takeOverFee = parseInt(takeOverFee);
 
-    console.log(req.body)
+    // console.log(req.body)
     console.log(currentLicenseYear, expiryYear, totalCapacity, takeOverFee);
     
     if (licenseType && licenseType === "Category B") {
