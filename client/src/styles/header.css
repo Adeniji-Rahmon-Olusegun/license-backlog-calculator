@@ -16,7 +16,7 @@
 }
 
 .header-logo {
-    padding-left: 1rem;
+    padding-left: 4rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -33,7 +33,7 @@
     display: flex;
     list-style: none;
     font-weight: 500;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .hamburger {
